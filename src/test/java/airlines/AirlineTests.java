@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class AirlineTests extends  AirlineAPIs {
 
-    @Test
+    @Test()
     public void createAirline() throws IOException {
         Map<String, Object> payload = Payloads.getCreateAirlinePayloadFromMap("5654457", "ABC Airlines", "IN", "ABC", "ABC Slogan", "Mumbai", "abc.com", "2022");
         Response response = createAirline(payload);
