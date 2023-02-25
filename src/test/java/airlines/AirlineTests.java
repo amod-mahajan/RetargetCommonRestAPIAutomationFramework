@@ -13,7 +13,7 @@ public class AirlineTests extends  AirlineAPIs {
 
     @Test()
     public void createAirline() throws IOException {
-        Map<String, Object> payload = Payloads.getCreateAirlinePayloadFromMap("5654457", "ABC Airlines", "IN", "ABC", "ABC Slogan", "Mumbai", "abc.com", "2022");
+        Map<String, Object> payload = Payloads.getCreateAirlinePayloadFromMap();
         Response response = createAirline(payload);
         Assert.assertEquals(response.statusCode(), 200);
     }
