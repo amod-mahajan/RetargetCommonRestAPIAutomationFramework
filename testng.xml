@@ -8,9 +8,6 @@
           name="C:/WorldOfRetargetCommon/RetargetCommonRestAPIAutomationFramework/src/test/java/airlines/AirlineTests.java">
         <classes>
             <class name="airlines.AirlineTests">
-                <methods>
-                    <include name="createAirline"/>
-                </methods>
             </class>
         </classes>
     </test>
