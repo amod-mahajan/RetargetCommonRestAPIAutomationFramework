@@ -1,11 +1,14 @@
 package airlines;
 
 import airlines.pojos.Airline;
+import airlines.pojos.Employee;
 import airlines.pojos.Gender;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import reporting.ExtentReportManager;
+import reporting.Setup;
 import utils.RandomDataGenerator;
 
 import java.io.IOException;
@@ -29,6 +32,7 @@ public class AirlineTests extends  AirlineAPIs {
     public void createAirlineAndVerifyResponse() throws IOException {
         Airline payload = new Airline();
         Response response = createAirline(payload);
+        payload.setCountry("RandomCOuntry");
 
         // first way
         Assert.assertEquals(response.jsonPath().getString("name"), payload.getName());

@@ -35,6 +35,7 @@
         <datafakerVersion>1.8.0</datafakerVersion>
         <lombokVersion>1.18.24</lombokVersion>
         <apacheCommonLangVersion>3.12.0</apacheCommonLangVersion>
+        <javersVersion>6.12.0</javersVersion>
     </properties>
 
     <dependencies>
@@ -90,6 +91,13 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${apacheCommonLangVersion}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.javers/javers-core -->
+        <dependency>
+            <groupId>org.javers</groupId>
+            <artifactId>javers-core</artifactId>
+            <version>${javersVersion}</version>
         </dependency>
 
     </dependencies>

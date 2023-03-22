@@ -7,7 +7,7 @@
     <test verbose="2" preserve-order="true"
           name="C:/WorldOfRetargetCommon/RetargetCommonRestAPIAutomationFramework/src/test/java/airlines/AirlineTests.java">
         <classes>
-            <class name="airlines.AirlineTests">
+            <class name="airlines.AirlineTestsNew">
             </class>
         </classes>
     </test>
