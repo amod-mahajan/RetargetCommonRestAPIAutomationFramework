@@ -34,6 +34,14 @@ public class ExcelUtils {
                 int totalCols = sheet.getRow(i).getPhysicalNumberOfCells();
                 for (int j = 0; j < totalCols; j++) {
                     String cellValue = dataFormatter.formatCellValue(sheet.getRow(i).getCell(j));
+                    int size = 6;
+                    if(cellValue.contains("RandomNumber")) {
+                        // With size
+                        if(cellValue.contains("_")) {
+                            size = Integer.parseInt((cellValue.split("_"))[1]);
+                        }
+                        cellValue = RandomDataGenerator.getRandomNumber(size);
+                    }
                     mapData.put(allKeys.get(j), cellValue);
                 }
                 dataFromExcel.add(mapData);
