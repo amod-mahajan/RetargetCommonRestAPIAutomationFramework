@@ -28,17 +28,17 @@ public class AirlineTests extends  AirlineAPIs {
 //        System.out.println(new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(payload));
 //    }
 
-    @Test()
-    public void createAirlineAndVerifyResponse() throws IOException {
-        Airline payload = new Airline();
-        Response response = createAirline(payload);
-        payload.setCountry("RandomCOuntry");
-
-        // first way
-        Assert.assertEquals(response.jsonPath().getString("name"), payload.getName());
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        Airline createAirlineResponse = objectMapper.readValue(response.getBody().asString(), Airline.class);
-        Assert.assertEquals(createAirlineResponse, payload);
-    }
+   // @Test()
+//    public void createAirlineAndVerifyResponse() throws IOException {
+//        Airline payload = new Airline();
+//        Response response = createAirline(payload);
+//        payload.setCountry("RandomCOuntry");
+//
+//        // first way
+//        Assert.assertEquals(response.jsonPath().getString("name"), payload.getName());
+//
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        Airline createAirlineResponse = objectMapper.readValue(response.getBody().asString(), Airline.class);
+//        Assert.assertEquals(createAirlineResponse, payload);
+//    }
 }

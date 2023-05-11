@@ -114,5 +114,12 @@
             <version>5.2.3</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.github.ozlerhakan/poiji -->
+        <dependency>
+            <groupId>com.github.ozlerhakan</groupId>
+            <artifactId>poiji</artifactId>
+            <version>4.1.1</version>
+        </dependency>
+
     </dependencies>
 </project>
